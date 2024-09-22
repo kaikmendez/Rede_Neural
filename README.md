@@ -1,5 +1,4 @@
-# Rede_Neural
-Rede Neural para Predição de Desempenho de Alunos
+# Rede Neural para Predição de Desempenho de Alunos
 
 Este projeto utiliza uma rede neural para prever o desempenho de alunos com base em fatores de entrada. A implementação é feita com a biblioteca TensorFlow e Keras, e o processo inclui etapas de pré-processamento, construção e treinamento do modelo.
 
