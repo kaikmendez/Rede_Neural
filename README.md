@@ -2,7 +2,8 @@
 
 Este projeto utiliza uma rede neural para prever o desempenho de alunos com base em fatores de entrada. A implementação é feita com a biblioteca TensorFlow e Keras, e o processo inclui etapas de pré-processamento, construção e treinamento do modelo.
 
-Descrição do Código
+Descrição do Código:
+
 1. Importação de Bibliotecas
 As bibliotecas necessárias são importadas, incluindo numpy, pandas, matplotlib, e várias funções do sklearn e tensorflow.keras.
 
@@ -13,6 +14,7 @@ Os dados são carregados de um arquivo CSV chamado StudentPerformanceFactors.csv
 Análise Descritiva: Estatísticas básicas dos dados numéricos são exibidas.
 Codificação One-Hot: Colunas categóricas são identificadas e codificadas utilizando OneHotEncoder, que transforma as variáveis categóricas em variáveis binárias (dummy variables).
 Separação de Recursos e Alvo: Os dados de entrada (X) são separados das saídas (y), onde Exam_Score é a variável alvo.
+
 4. Normalização
 Os dados de entrada são normalizados utilizando StandardScaler para que os modelos de aprendizado de máquina possam convergir mais rapidamente e com mais eficácia.
 
@@ -26,6 +28,7 @@ Camada de entrada.
 Duas camadas ocultas com 5 neurônios cada, usando a função de ativação ReLU.
 Camadas de Dropout são adicionadas após cada camada oculta para ajudar a prevenir o overfitting.
 Uma camada de saída com um neurônio, adequada para problemas de regressão.
+
 7. Compilação do Modelo
 O modelo é compilado utilizando a função de perda mean_squared_error, o otimizador adam, e a métrica mae (mean absolute error).
 
